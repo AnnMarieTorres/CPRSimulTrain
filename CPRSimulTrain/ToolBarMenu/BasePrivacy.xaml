@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BasePrivacy"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+
+  <x1:StackLayout>
+    <x1:ScrollView VerticalScrollBarVisibility="Always">
+
+      <x1:StackLayout x:Name="MainStack" BackgroundColor="WhiteSmoke">
+
+        <!--  1  -->
+        <x1:Frame
+          x:Name="LocationFrame"
+          Margin="10"
+          Padding="0"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <x1:StackLayout
+            x:Name="MainFrameStack0"
+            Padding="15"
+            HorizontalOptions="FillAndExpand"
+            Spacing="9">
+
+
+            <!--  main header content  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyTopHead}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyLastUpdate}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyMainBody}" />
+
+              </x1:StackLayout>
+            </border:SfBorder>
+
+
+
+            <!--  Border around 1  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead1}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody1}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+            <!--  Border around 2  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead2}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody2}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 3  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead3}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody3}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 4  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead4}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody4}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 5  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead5}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody5}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 6  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead6}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody6}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 7  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead7}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody7}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 8  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead8}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody8}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 9  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead9}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody9}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 10  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead10}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody10}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 11  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead11}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody11}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+            <!--  Border around 12  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:StackLayout>
+                <x1:Label
+                  Margin="0,5,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Small"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyHead12}" />
+
+                <x1:Label
+                  Margin="0,0,0,0"
+                  BackgroundColor="WhiteSmoke"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  HorizontalOptions="FillAndExpand"
+                  HorizontalTextAlignment="Start"
+                  Text="{x:Static resources:AppResources.BasePrivacyBody12}" />
+
+              </x1:StackLayout>
+
+            </border:SfBorder>
+
+
+          </x1:StackLayout>
+        </x1:Frame>
+
+      </x1:StackLayout>
+    </x1:ScrollView>
+
+
+
+  </x1:StackLayout>
+
+
+
+</x1:ContentPage>

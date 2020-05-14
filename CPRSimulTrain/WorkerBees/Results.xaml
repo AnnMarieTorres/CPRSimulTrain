@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.Results"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+  xmlns:local="clr-namespace:CPRSimulTrain.CPR_Utilities"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+
+  <!--  Toolbar  -->
+  <x1:ContentPage.ToolbarItems>
+    <x1:ToolbarItem
+      Name="MenuItem0"
+      Clicked="BaseUserGuide_P3_Clicked"
+      Icon="help.png"
+      Order="Primary"
+      Priority="0" />
+    <x1:ToolbarItem
+      Name="MenuItem1"
+      Clicked="BaseUserGuide_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseUserGuide}" />
+    <x1:ToolbarItem
+      Name="MenuItem4"
+      Clicked="BaseFeedback_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseFeedback}" />
+    <x1:ToolbarItem
+      Name="MenuItem5"
+      Clicked="BaseShare_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseShare}" />
+    <x1:ToolbarItem
+      Name="MenuItem6"
+      Clicked="BaseDisclaimer_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseLegal}" />
+    <x1:ToolbarItem
+      Name="MenuItem7"
+      Clicked="BasePrivacy_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.Base_Private}" />
+    <x1:ToolbarItem
+      Name="MenuItem8"
+      Clicked="StatAbout_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseAbout}" />
+    <x1:ToolbarItem
+      Name="MenuItem9"
+      Clicked="BaseContactUs_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseContactUs}" />
+  </x1:ContentPage.ToolbarItems>
+
+  <x1:StackLayout>
+    <x1:ScrollView x:Name="GenScrollWindow" VerticalScrollBarVisibility="Always">
+
+      <x1:Frame
+        x:Name="OverallFrame"
+        BackgroundColor="White"
+        BorderColor="Brown"
+        HorizontalOptions="FillAndExpand">
+
+        <!--  Sections via 'Borders'  -->
+        <x1:StackLayout
+          x:Name="MainFrameStack"
+          Margin="-10,-10,-10,0"
+          HorizontalOptions="FillAndExpand">
+
+
+
+          <!--  Best Simulation  -->
+          <border:SfBorder
+            Margin="0,0,0,0"
+            Padding="4,0,4,0"
+            BackgroundColor="WhiteSmoke"
+            BorderColor="Green"
+            CornerRadius="5">
+
+            <!--  Input / Result Details  -->
+            <x1:StackLayout>
+
+              <!--  Display  -->
+              <x1:Grid BackgroundColor="WhiteSmoke">
+                <x1:Grid.RowDefinitions>
+                  <x1:RowDefinition Height="1" />
+                  <x1:RowDefinition Height="28" />
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="20" />
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="20" />
+                  <x1:RowDefinition Height="0" />
+                  <x1:RowDefinition Height="25" />
+                  <x1:RowDefinition Height="0" />
+                  <x1:RowDefinition Height="78" />
+                  <x1:RowDefinition Height="5" />
+                </x1:Grid.RowDefinitions>
+
+
+                <x1:Grid.ColumnDefinitions>
+                  <x1:ColumnDefinition Width="52" />
+                  <x1:ColumnDefinition Width="135" />
+                  <x1:ColumnDefinition Width="30" />
+                  <x1:ColumnDefinition Width="110" />
+                  <x1:ColumnDefinition Width="*" />
+                </x1:Grid.ColumnDefinitions>
+
+
+                <!--  Header  -->
+                <x1:StackLayout
+                  x:Name="Stack001"
+                  Grid.Row="1"
+                  Grid.ColumnSpan="5"
+                  Margin="5,0,0,-5"
+                  HorizontalOptions="FillAndExpand">
+
+                  <x1:Label
+                    Margin="5,0,0,0"
+                    FontAttributes="Italic,Bold"
+                    FontSize="28"
+                    HorizontalTextAlignment="Start"
+                    Text="{x:Static resources:AppResources.CPRResultBest}"
+                    TextColor="Blue" />
+                </x1:StackLayout>
+
+                <!--  On 12/12/12  At 12:12 am  -->
+                <x1:StackLayout
+                  Grid.Row="3"
+                  Grid.ColumnSpan="5"
+                  HorizontalOptions="CenterAndExpand"
+                  Orientation="Horizontal">
+
+                  <!--  On ....  At .....  -->
+                  <x1:StackLayout
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <x1:Label
+                      Padding="0,4,0,0"
+                      FontSize="Micro"
+                      HorizontalOptions="EndAndExpand"
+                      HorizontalTextAlignment="End"
+                      Text="{x:Static resources:AppResources.CPRResultOn}"
+                      TextColor="Black"
+                      VerticalTextAlignment="Center" />
+                  </x1:StackLayout>
+
+                  <!--  On: 12/16/17  Display  -->
+                  <x1:StackLayout>
+                    <border:SfBorder
+                      Margin="0,0,20,0"
+                      Padding="4,2,4,2"
+                      BackgroundColor="LightBlue"
+                      BorderColor="Gray"
+                      CornerRadius="5">
+                      <x1:Label
+                        x:Name="lbl_OnBox"
+                        Padding="0,0,0,2"
+                        BackgroundColor="White"
+                        FontSize="Small"
+                        HeightRequest="28"
+                        HorizontalTextAlignment="Center"
+                        Text=""
+                        VerticalTextAlignment="Center"
+                        WidthRequest="100" />
+
+                    </border:SfBorder>
+                  </x1:StackLayout>
+
+                  <!--  at:  Display  -->
+                  <x1:StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                    <x1:Label
+                      Padding="0,4,0,0"
+                      FontSize="Micro"
+                      HorizontalOptions="EndAndExpand"
+                      HorizontalTextAlignment="End"
+                      Text="{x:Static resources:AppResources.CPRResultAt}"
+                      TextColor="Black"
+                      VerticalTextAlignment="Center" />
+                  </x1:StackLayout>
+
+                  <!--  at: 11:13 PM  Display  -->
+                  <x1:StackLayout>
+                    <border:SfBorder
+                      Margin="0,0,20,0"
+                      Padding="4,2,4,2"
+                      BackgroundColor="LightBlue"
+                      BorderColor="Gray"
+                      CornerRadius="5">
+                      <x1:Label
+                        x:Name="lbl_AtBox"
+                        Padding="0,0,0,2"
+                        BackgroundColor="White"
+                        FontSize="Small"
+                        HeightRequest="28"
+                        HorizontalTextAlignment="Center"
+                        Text=""
+                        VerticalTextAlignment="Center"
+                        WidthRequest="100" />
+
+
+                    </border:SfBorder>
+                  </x1:StackLayout>
+
+                </x1:StackLayout>
+
+                <!--  You had ....  -->
+                <x1:StackLayout
+                  Grid.Row="5"
+                  Grid.ColumnSpan="5"
+                  HorizontalOptions="CenterAndExpand"
+                  Orientation="Horizontal">
+
+                  <x1:StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <x1:Label
+                      Padding="0,4,0,0"
+                      FontSize="Micro"
+                      HorizontalOptions="EndAndExpand"
+                      HorizontalTextAlignment="End"
+                      Text="{x:Static resources:AppResources.CPRResultYouHad}"
+                      TextColor="Black"
+                      VerticalTextAlignment="Center" />
+                  </x1:StackLayout>
+
+                  <!--  33.33 %  Display  -->
+                  <x1:StackLayout Grid.Row="5" Grid.Column="1">
+                    <border:SfBorder
+                      Padding="4,2,4,2"
+                      BackgroundColor="LightBlue"
+                      BorderColor="Gray"
+                      CornerRadius="5">
+                      <x1:Label
+                        x:Name="lbl_ResultVal"
+                        Padding="0,0,0,2"
+                        BackgroundColor="White"
+                        FontSize="Small"
+                        HeightRequest="28"
+                        HorizontalTextAlignment="Center"
+                        Text=""
+                        VerticalTextAlignment="Center"
+                        WidthRequest="100" />
+
+                    </border:SfBorder>
+                  </x1:StackLayout>
+
+
+                  <x1:StackLayout
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Start"
+                    VerticalOptions="CenterAndExpand">
+                    <x1:Label
+                      Margin="5,0,0,0"
+                      Padding="0,4,0,0"
+                      FontSize="Micro"
+                      HorizontalOptions="EndAndExpand"
+                      HorizontalTextAlignment="End"
+                      Text="{x:Static resources:AppResources.CPRResultCorrect}"
+                      TextColor="Black"
+                      VerticalTextAlignment="Center" />
+                  </x1:StackLayout>
+
+
+                </x1:StackLayout>
+
+
+                <!--  Congratulation  -->
+                <x1:StackLayout
+                  Grid.Row="7"
+                  Grid.ColumnSpan="5"
+                  HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand">
+                  <x1:Label
+                    x:Name="lbl_Congratulation"
+                    Margin="5,3,3,5"
+                    Padding="2,8,2,3"
+                    FontSize="Large"
+                    HorizontalOptions="EndAndExpand"
+                    HorizontalTextAlignment="End"
+                    Text="{x:Static resources:AppResources.CPRResultCongratulation}"
+                    TextColor="Blue"
+                    VerticalTextAlignment="Center" />
+                </x1:StackLayout>
+
+                <!--  Text to get a Share  -->
+                <x1:StackLayout
+                  Grid.Row="9"
+                  Grid.ColumnSpan="5"
+                  HorizontalOptions="CenterAndExpand"
+                  Orientation="Horizontal"
+                  Spacing="20"
+                  VerticalOptions="CenterAndExpand">
+
+                  <x1:Label
+                    x:Name="lbl_shareText"
+                    Margin="0,5,0,0"
+                    Padding="1,0,1,0"
+                    BackgroundColor="WhiteSmoke"
+                    FontSize="Default"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="{x:Static resources:AppResources.CPRResultWhyNot}"
+                    TextColor="Black"
+                    WidthRequest="150" />
+
+                  <buttons:SfButton
+                    x:Name="SfButton_Share"
+                    Margin="0,10,0,0"
+                    Padding="0,0,0,0"
+                    BackgroundColor="LightGray"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    Clicked="SfButton_Share_Clicked_1"
+                    CornerRadius="15"
+                    FontSize="Micro"
+                    HeightRequest="37"
+                    Text="{x:Static resources:AppResources.CPRResultShareOption}"
+                    TextColor="Black"
+                    WidthRequest="140">
+
+                    <buttons:SfButton.BackgroundGradient>
+                      <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                          <gradient:SfGradientStop Offset="0" Color="#e9eaeb" />
+                          <gradient:SfGradientStop Offset="1" Color="#bdc3c7" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                      </gradient:SfLinearGradientBrush>
+                    </buttons:SfButton.BackgroundGradient>
+                  </buttons:SfButton>
+
+
+                </x1:StackLayout>
+
+
+
+              </x1:Grid>
+
+            </x1:StackLayout>
+          </border:SfBorder>
+
+
+          <!--  List of past Compressions  -->
+          <border:SfBorder
+            Margin="0,0,0,0"
+            Padding="4,0,4,0"
+            BackgroundColor="WhiteSmoke"
+            BorderColor="Green"
+            CornerRadius="5">
+
+            <!--  Input / Result Details  -->
+            <x1:StackLayout>
+
+              <StackLayout
+                x:Name="MainFrameStack2"
+                Margin="-10,0,-10,0"
+                BackgroundColor="WhiteSmoke"
+                HorizontalOptions="FillAndExpand">
+                <!--  List  -->
+                <x1:ListView
+                  x:Name="listView"
+                  Margin="5,10,5,20"
+                  x1:Grid.Column="0"
+                  x1:Grid.Row="3"
+                  BackgroundColor="WhiteSmoke"
+                  ItemSelected="OnListViewItemSelected"
+                  RowHeight="35"
+                  SeparatorColor="Black"
+                  SeparatorVisibility="Default">
+
+                  <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                      <Label
+                        Padding="8,0,0,0"
+                        BackgroundColor="LightGray"
+                        HeightRequest="40"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Start"
+                        Text="{x:Static resources:AppResources.ResultHDR}"
+                        TextColor="Blue"
+                        VerticalTextAlignment="Center" />
+                    </StackLayout>
+                  </ListView.Header>
+                  <ListView.ItemTemplate>
+                    <DataTemplate>
+                      <ViewCell>
+                        <Grid Padding="5">
+                          <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                          </Grid.RowDefinitions>
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition Width="45" />
+                            <ColumnDefinition Width="45" />
+                            <ColumnDefinition Width="45" />
+                            <ColumnDefinition Width="*" />
+                          </Grid.ColumnDefinitions>
+                          <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Font="Small"
+                            Text="{Binding datetimeCPR}"
+                            TextColor="Teal" />
+                          <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Font="Small"
+                            Text="{Binding goodCPR}"
+                            TextColor="Blue" />
+                          <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Font="Small"
+                            Text="{Binding shallowCPR}"
+                            TextColor="Blue" />
+                          <Label
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            Font="Small"
+                            Text="{Binding deepCPR}"
+                            TextColor="Blue" />
+                        </Grid>
+                      </ViewCell>
+
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+
+
+
+                </x1:ListView>
+
+              </StackLayout>
+              <!--</x1:Grid>-->
+
+            </x1:StackLayout>
+
+          </border:SfBorder>
+
+
+        </x1:StackLayout>
+
+      </x1:Frame>
+      <!--</x1:StackLayout>-->
+    </x1:ScrollView>
+
+  </x1:StackLayout>
+</x1:ContentPage>

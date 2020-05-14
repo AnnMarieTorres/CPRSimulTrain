@@ -1,0 +1,146 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="36_Bottom_Status\**" />
+    <Compile Remove="CPR_Utilities\DataModels\**" />
+    <Compile Remove="CPR_Utilities\Data\**" />
+    <Compile Remove="A_Save_Utils\**" />
+    <Compile Remove="A_Save_Utils\DataModels\**" />
+    <Compile Remove="A_Save_Utils\Data\**" />
+    <Compile Remove="SQLiteData\**" />
+    <EmbeddedResource Remove="36_Bottom_Status\**" />
+    <EmbeddedResource Remove="CPR_Utilities\DataModels\**" />
+    <EmbeddedResource Remove="CPR_Utilities\Data\**" />
+    <EmbeddedResource Remove="A_Save_Utils\**" />
+    <EmbeddedResource Remove="A_Save_Utils\DataModels\**" />
+    <EmbeddedResource Remove="A_Save_Utils\Data\**" />
+    <EmbeddedResource Remove="SQLiteData\**" />
+    <None Remove="36_Bottom_Status\**" />
+    <None Remove="CPR_Utilities\DataModels\**" />
+    <None Remove="CPR_Utilities\Data\**" />
+    <None Remove="A_Save_Utils\**" />
+    <None Remove="A_Save_Utils\DataModels\**" />
+    <None Remove="A_Save_Utils\Data\**" />
+    <None Remove="SQLiteData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CPR_Utilities\Customer.cs" />
+    <Compile Remove="CPR_Utilities\CustomersDataAccess.cs" />
+    <Compile Remove="CPR_Utilities\CustomersPage.xaml.cs" />
+    <Compile Remove="CPR_Utilities\CustomTimePicker.cs" />
+    <Compile Remove="CPR_Utilities\FlatData.cs" />
+    <Compile Remove="CPR_Utilities\HospitalDBDetails.cs" />
+    <Compile Remove="CPR_Utilities\PermissionUtil.cs" />
+    <Compile Remove="CPR_Utilities\ProfileUtil.cs" />
+    <Compile Remove="CPR_Utilities\TimePickerViewModel.cs" />
+    <Compile Remove="Customer.cs" />
+    <Compile Remove="CustomersDataAccess.cs" />
+    <Compile Remove="CustomersPage.xaml.cs" />
+    <Compile Remove="ToolBarMenu\BaseOldGuide.xaml.cs" />
+    <Compile Remove="ToolBarMenu\BaseTrouble.xaml.cs" />
+    <Compile Remove="WorkerBees\CPRSimul.xaml.cs" />
+    <Compile Remove="WorkerBees\wwCPRSimul.xaml.cs" />
+    <Compile Remove="WorkerBees\wwDoingCPR.xaml.cs" />
+    <Compile Remove="wwCPRSimul.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CPR_Utilities\CustomersPage.xaml" />
+    <EmbeddedResource Remove="CustomersPage.xaml" />
+    <EmbeddedResource Remove="Resx\AppResources.de-CH.resx" />
+    <EmbeddedResource Remove="Resx\AppResources.id.resx" />
+    <EmbeddedResource Remove="Resx\AppResources.ms.resx" />
+    <EmbeddedResource Remove="ToolBarMenu\BaseOldGuide.xaml" />
+    <EmbeddedResource Remove="ToolBarMenu\BaseTrouble.xaml" />
+    <EmbeddedResource Remove="WorkerBees\CPRSimul.xaml" />
+    <EmbeddedResource Remove="WorkerBees\wwCPRSimul.xaml" />
+    <EmbeddedResource Remove="WorkerBees\wwDoingCPR.xaml" />
+    <EmbeddedResource Remove="wwCPRSimul.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CPR_Utilities\HospitalDBInfo" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicGradients" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="5.0.0-preview.3.20214.6" />
+    <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="Syncfusion.Licensing" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="18.1.0.45" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRangeSlider" Version="18.1.0.45" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.4.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.616-pre4" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v10.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resx\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ToolBarMenu\BaseUserGuide_P2.xaml.cs">
+      <DependentUpon>BaseUserGuide_P2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ToolBarMenu\BaseUserGuide_P3.xaml.cs">
+      <DependentUpon>BaseUserGuide_P3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ToolBarMenu\BaseUserGuide_P1.xaml.cs">
+      <DependentUpon>BaseUserGuide_P1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ToolBarMenu\BaseUserGuide.xaml.cs">
+      <DependentUpon>BaseUserGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="WorkerBees\Results.xaml.cs">
+      <DependentUpon>wwResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="WorkerBees\EntryMain.xaml.cs">
+      <DependentUpon>Entry100.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resx\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WorkerBees\CPRMod.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="WorkerBees\CPRSimul.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="wwCPRSimul.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

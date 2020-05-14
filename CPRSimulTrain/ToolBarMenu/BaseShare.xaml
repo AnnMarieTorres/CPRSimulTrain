@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseShare"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <x1:StackLayout IsEnabled="True" IsVisible="True">
+    <x1:ScrollView VerticalScrollBarVisibility="Always">
+
+      <!--  Location/Contact  -->
+      <x1:StackLayout x:Name="MainStack" BackgroundColor="WhiteSmoke">
+
+        <!--  1  -->
+        <x1:Frame
+          x:Name="LocationFrame"
+          Margin="10,10,10,10"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <x1:StackLayout
+            x:Name="MainFrameStack0"
+            Margin="15"
+            HorizontalOptions="FillAndExpand">
+
+
+            <!--  Border around 1  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  1 content  -->
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="LightGray"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="{x:Static resources:AppResources.BaseShareNote}" />
+
+            </border:SfBorder>
+
+            <!--  Share Button  -->
+            <x1:StackLayout
+              x:Name="MainFrameStack22"
+              Padding="5"
+              HorizontalOptions="Start"
+              Spacing="10">
+              <x1:Button
+                x:Name="SfButton_Share"
+                Padding="5"
+                BackgroundColor="Yellow"
+                BorderColor="Black"
+                BorderWidth="1"
+                Clicked="SfButton_Share_Clicked"
+                CornerRadius="8"
+                FontSize="Micro"
+                HeightRequest="37"
+                Text="{x:Static resources:AppResources.BaseShareGetOption}"
+                TextColor="Black"
+                WidthRequest="160" />
+            </x1:StackLayout>
+          </x1:StackLayout>
+        </x1:Frame>
+
+      </x1:StackLayout>
+    </x1:ScrollView>
+
+
+    <x1:Label
+      x:Name="shareLabel"
+      BackgroundColor="LightGray"
+      FontSize="Default"
+      HorizontalOptions="FillAndExpand"
+      IsVisible="False"
+      Text="{x:Static resources:AppResources.BaseShareFound}" />
+
+
+  </x1:StackLayout>
+</x1:ContentPage>

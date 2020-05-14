@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.EntryMain"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+  xmlns:local="clr-namespace:CPRSimulTrain.CPR_Utilities"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <!--  Toolbar  -->
+  <x1:ContentPage.ToolbarItems>
+    <x1:ToolbarItem
+      Name="MenuItem0"
+      Clicked="BaseUserGuide_P1_Clicked"
+      Icon="help.png"
+      Order="Primary"
+      Priority="0" />
+    <x1:ToolbarItem
+      Name="MenuItem1"
+      Clicked="BaseUserGuide_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseUserGuide}" />
+    <x1:ToolbarItem
+      Name="MenuItem4"
+      Clicked="BaseFeedback_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseFeedback}" />
+    <x1:ToolbarItem
+      Name="MenuItem5"
+      Clicked="BaseShare_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseShare}" />
+    <x1:ToolbarItem
+      Name="MenuItem6"
+      Clicked="BaseDisclaimer_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseLegal}" />
+    <x1:ToolbarItem
+      Name="MenuItem7"
+      Clicked="BasePrivacy_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.Base_Private}" />
+    <x1:ToolbarItem
+      Name="MenuItem8"
+      Clicked="StatAbout_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseAbout}" />
+    <x1:ToolbarItem
+      Name="MenuItem9"
+      Clicked="BaseContactUs_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseContactUs}" />
+  </x1:ContentPage.ToolbarItems>
+
+
+  <x1:StackLayout>
+    <x1:ScrollView x:Name="GenScrollWindow" VerticalScrollBarVisibility="Always">
+
+      <x1:Frame
+        x:Name="LocationFrame"
+        BackgroundColor="White"
+        BorderColor="Brown"
+        HorizontalOptions="FillAndExpand">
+
+        <!--  Sections via 'Borders'  -->
+        <x1:StackLayout
+          x:Name="FirstFrameStack"
+          Margin="-10,0,-10,0"
+          HorizontalOptions="StartAndExpand"
+          VerticalOptions="StartAndExpand">
+
+          <!--  Header  -->
+          <x1:Grid BackgroundColor="White">
+            <x1:Grid.ColumnDefinitions>
+              <x1:ColumnDefinition Width="*" />
+            </x1:Grid.ColumnDefinitions>
+            <x1:Grid.RowDefinitions>
+              <x1:RowDefinition Height="25" />
+              <x1:RowDefinition Height="95" />
+              <x1:RowDefinition Height="35" />
+            </x1:Grid.RowDefinitions>
+            <x1:Label
+              Grid.Row="0"
+              Grid.Column="0"
+              FontAttributes="Italic"
+              FontSize="14"
+              HorizontalTextAlignment="Center"
+              Text="{x:Static resources:AppResources.EntryMainHDR01}"
+              TextColor="Gray" />
+            <x1:Label
+              Grid.Row="1"
+              Grid.Column="0"
+              FontAttributes="Italic"
+              FontSize="32"
+              HorizontalTextAlignment="Center"
+              Text="{x:Static resources:AppResources.EntryMainHDR02}"
+              TextColor="Gray" />
+            <x1:Label
+              Grid.Row="2"
+              Grid.Column="0"
+              FontAttributes="Italic"
+              FontSize="14"
+              HorizontalTextAlignment="Center"
+              Text="{x:Static resources:AppResources.EntryMainHDR03}"
+              TextColor="Gray" />
+
+          </x1:Grid>
+
+
+
+          <!--  Create / DB list / Instant on/off  -->
+          <border:SfBorder
+            Margin="0,20,0,0"
+            Padding="4,0,4,0"
+            BackgroundColor="WhiteSmoke"
+            BorderColor="Green"
+            CornerRadius="5">
+
+            <x1:Grid Margin="0,0,0,0">
+              <x1:Grid.ColumnDefinitions>
+                <x1:ColumnDefinition Width="*" />
+              </x1:Grid.ColumnDefinitions>
+              <x1:Grid.RowDefinitions>
+                <x1:RowDefinition Height="25" />
+                <x1:RowDefinition Height="95" />
+                <x1:RowDefinition Height="5" />
+                <x1:RowDefinition Height="95" />
+                <x1:RowDefinition Height="30" />
+              </x1:Grid.RowDefinitions>
+
+              <buttons:SfButton
+                x:Name="btSimul"
+                Margin="15,0,15,0"
+                x1:Grid.Column="0"
+                x1:Grid.Row="1"
+                BackgroundColor="LightYellow"
+                BorderColor="Black"
+                BorderWidth="1"
+                Clicked="btSimul_Clicked"
+                CornerRadius="30"
+                FontAttributes="Bold"
+                FontSize="Title"
+                HeightRequest="40"
+                HorizontalOptions="CenterAndExpand"
+                ImageSource="techn.jpg"
+                Text="{x:Static resources:AppResources.EntryMainDoSimul}"
+                TextColor="Black">
+
+                <buttons:SfButton.BackgroundGradient>
+                  <gradient:SfLinearGradientBrush>
+                    <gradient:SfLinearGradientBrush.GradientStops>
+                      <gradient:SfGradientStop Offset="0" Color="#51f1f2" />
+                      <gradient:SfGradientStop Offset="1" Color="#2f9bdf" />
+                    </gradient:SfLinearGradientBrush.GradientStops>
+                  </gradient:SfLinearGradientBrush>
+                </buttons:SfButton.BackgroundGradient>
+              </buttons:SfButton>
+
+              <buttons:SfButton
+                x:Name="btResults"
+                Margin="15,0,15,0"
+                x1:Grid.Column="0"
+                x1:Grid.Row="3"
+                BackgroundColor="LightGray"
+                BorderColor="Black"
+                BorderWidth="1"
+                Clicked="btResults_Clicked"
+                CornerRadius="30"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HeightRequest="40"
+                HorizontalOptions="CenterAndExpand"
+                ImageSource="docitsmall.jpg"
+                Text="{x:Static resources:AppResources.EntryMainResults}"
+                TextColor="Black">
+
+                <buttons:SfButton.BackgroundGradient>
+                  <gradient:SfLinearGradientBrush>
+                    <gradient:SfLinearGradientBrush.GradientStops>
+                      <gradient:SfGradientStop Offset="0" Color="#e9eaeb" />
+                      <gradient:SfGradientStop Offset="1" Color="#bdc3c7" />
+                    </gradient:SfLinearGradientBrush.GradientStops>
+                  </gradient:SfLinearGradientBrush>
+                </buttons:SfButton.BackgroundGradient>
+              </buttons:SfButton>
+
+            </x1:Grid>
+
+          </border:SfBorder>
+
+        </x1:StackLayout>
+
+      </x1:Frame>
+      <!--</x1:StackLayout>-->
+    </x1:ScrollView>
+
+
+  </x1:StackLayout>
+</x1:ContentPage>

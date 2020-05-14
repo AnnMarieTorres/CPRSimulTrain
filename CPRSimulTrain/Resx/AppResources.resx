@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="AlertFirstQuestionHd" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="AlertFisrtQuestion" xml:space="preserve">
+    <value>Normally:
+30 CPR's, Breath-of-Life, next 30 CPR's
+But here and now?
+Just so many sets of 30 CPR's each.
+</value>
+  </data>
+  <data name="Base Private" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="BaseAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="BaseAboutCopy" xml:space="preserve">
+    <value>Copyright (2019,2020)
+CNG Internet Software, LLC
+All Rights Reserved</value>
+  </data>
+  <data name="BaseAboutName" xml:space="preserve">
+    <value>App Name.:</value>
+  </data>
+  <data name="BaseAboutReg" xml:space="preserve">
+    <value>Reg. Number.:</value>
+  </data>
+  <data name="BaseAboutRelease" xml:space="preserve">
+    <value>Release Date.:</value>
+  </data>
+  <data name="BaseAboutTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="BaseAboutVersion" xml:space="preserve">
+    <value>App Version.:</value>
+  </data>
+  <data name="BaseContactAddress" xml:space="preserve">
+    <value> CNG Internet Software, LLC.
+  46 Village Ct.
+  Hazlet, NJ, 07730
+
+  Support@cngInternet.com
+ (973) 287-9862
+
+  App version: 2.1.14.8
+</value>
+  </data>
+  <data name="BaseContactContactMsg" xml:space="preserve">
+    <value>Message .. .. ..</value>
+  </data>
+  <data name="BaseContactEmail" xml:space="preserve">
+    <value>
+Email: </value>
+  </data>
+  <data name="BaseContactEmailOptional" xml:space="preserve">
+    <value>Email, optional</value>
+  </data>
+  <data name="BaseContactGetinTouch" xml:space="preserve">
+    <value>Get in Touch</value>
+  </data>
+  <data name="BaseContactLocation" xml:space="preserve">
+    <value>
+CNG Internet Software, LLC
+Matawan, NJ
+(973) 287-9862
+Service@CNGInternet.com
+</value>
+  </data>
+  <data name="BaseContactMessage" xml:space="preserve">
+    <value>
+Message: </value>
+  </data>
+  <data name="BaseContactName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="BaseContactNameOptional" xml:space="preserve">
+    <value>Name, optional</value>
+  </data>
+  <data name="BaseContactNowTime" xml:space="preserve">
+    <value>
+Some of my comments.
+
+</value>
+  </data>
+  <data name="BaseContactSend" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="BaseContactSubject1" xml:space="preserve">
+    <value>A Message re: 'CPR Simulation &amp; Training'</value>
+  </data>
+  <data name="BaseContactTitle" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="BaseContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="BaseContactYourMessage" xml:space="preserve">
+    <value>Your Message .. .. ..</value>
+  </data>
+  <data name="BaseDisclaimerTerms" xml:space="preserve">
+    <value>Terms of Use Agreement:</value>
+  </data>
+  <data name="BaseDisclaimerTermsA" xml:space="preserve">
+    <value>A) This [agreement] is entered between and by you and the author of this app. The use of the app is subject to the terms amd conditions of this agreement.</value>
+  </data>
+  <data name="BaseDisclaimerTermsB" xml:space="preserve">
+    <value>B) The information contained on these application pages is for informational purposes only and no warranty is made that the information is error-free. The information contained within the application pages may be, at any time, outdated and may include inaccuracies and/or errors. Information may change at any time without notice.</value>
+  </data>
+  <data name="BaseDisclaimerTermsC1" xml:space="preserve">
+    <value>C-1) NEITHER COMPANY, NOR ANY OF ITS SUBSIDIARIES, AFFILIATES, EMPLOYEES, AGENTS, LICENSORS OR CONTENT PROVIDERS  MAKES ANY REPRESENTATIONS OR WARRANTIES OF ANY KIND REGARDING ITS APPLICATION, THE CONTENT OR ANY SERVICE PROVIDED HEREIN.</value>
+  </data>
+  <data name="BaseDisclaimerTermsC2" xml:space="preserve">
+    <value>C-2) NEITHER COMPANY, NOR ANY OF ITS SUBSIDIARIES, AFFILIATES, EMPLOYEES, AGENTS, LICENSORS OR CONTENT PROVIDERS  MAKES ANY REPRESENTATIONS OR WARRANTIES OF ANY KIND REGARDING ITS APPLICATION, THE CONTENT OR ANY SERVICE PROVIDED HEREIN.</value>
+  </data>
+  <data name="BaseDisclaimerTermsC3" xml:space="preserve">
+    <value>C-3) THE CONTENT AND SERVICES ARE PROVIDED ON AN 'AS IS' BASIS AND COMPANY SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION, WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, WARRANTIES OF MERCHANTABILITY OR WARRANTIES AGAINST INFRINGEMENT.</value>
+  </data>
+  <data name="BaseDisclaimerTermsC4" xml:space="preserve">
+    <value>C-4) COMPANY, ITS SUBSIDIARIES, AFFILIATES, EMPLOYEES, AGENTS, LICENSORS AND CONTENT PROVIDERS SHALL NOT BE LIABLE FOR ANY DAMAGES OR LOSSES, MEDICAL EMERGENCIES, INJURIES, OR DEATH, WITHOUT LIMITATION, INDIRECT, CONSEQUENTIAL, SPECIAL, RESULTING FROM OR CAUSED BY THE COMPANY'S APPLICATION, THEIR CONTENT, ANY SERVICES PROVIDED HEREIN OR THE DELAY OR INABILITY TO USE THE COMPANY'S APPLICATION, OR ANY INFORMATION, MATERIALS, SOFTWARE, PRODUCTS AND SERVICES OBTAINED THROUGH THIS APPLICATION, OR OTHERWISE ARISING OUT OF THE USE OF THIS APPLICATION FOR ANY PRODUCTS OR SERVICES OR HYPERTEXT LINKS TO THIRD PARTIES OR FOR ANY BREACH OF SECURITY ASSOCIATED WITH THE TRANSMISSION OF SENSITIVE INFORMATION THROUGH THE APPLICATION, IN - USE DATABASE, OR ANY LINKED WEBSITE.WHETHER BASED ON CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES.</value>
+  </data>
+  <data name="BaseDisclaimerTermsD" xml:space="preserve">
+    <value>D) THE COMPANY DOES NOT REPRESENT OR ENDORSE THE ACCURACY OR RELIABILITY OF ANY ADVICE, OPINION, STATEMENT, OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE APPLICATION.YOU ACKNOWLEDGE THAT ANY RELIANCE UPON SUCH OPINION, ADVICE, STATEMENT, MEMORANDUM, OR INFORMATION SHALL BE AT YOUR SOLE RISK.THE COMPANY RESERVES THE RIGHT AT ALL TIMES TO DISCLOSE ANY INFORMATION AS NECESSARY TO SATISFY ANY LAW, REGULATION OR GOVERNMENT REQUEST, OR TO EDIT, REFUSE TO POST OR TO REMOVE ANY INFORMATION OR MATERIALS, IN WHOLE OR IN PART, THAT IN COMPANY'S SOLE DISCRETION ARE OBJECTIONABLE OR IN VIOLATION OF THIS AGREEMENT.</value>
+  </data>
+  <data name="BaseDisclaimerTermsE" xml:space="preserve">
+    <value>E) Company does not assume any responsibility or risk for your use of the Company's application content, websites, or mobile application(s), and will in no event be liable to you or anyone else for any decision made or action taken by you or anyone else in reliance upon the information provided through Company's application content, websites, or mobile application(s).</value>
+  </data>
+  <data name="BaseDisclaimerTitle" xml:space="preserve">
+    <value>Legal Disclaimer</value>
+  </data>
+  <data name="BaseFeedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="BaseFeedbackEmail" xml:space="preserve">
+    <value>
+Email:</value>
+  </data>
+  <data name="BaseFeedbackEmailOptional" xml:space="preserve">
+    <value>Email, optional</value>
+  </data>
+  <data name="BaseFeedbackFeedbToUs" xml:space="preserve">
+    <value>Your Feedback to Us</value>
+  </data>
+  <data name="BaseFeedbackMessage" xml:space="preserve">
+    <value>
+Message:</value>
+  </data>
+  <data name="BaseFeedbackNameOptional" xml:space="preserve">
+    <value>Name, optional</value>
+  </data>
+  <data name="BaseFeedbackNote" xml:space="preserve">
+    <value>Your Feedback is very much appreciated.
+If you will also submit your email (kept just by us) we will let you know ASP what happen next.
+
+CNG Internet Software, LLC.
+Support@cngInternet.com
+</value>
+  </data>
+  <data name="BaseFeedbackNowTime" xml:space="preserve">
+    <value>
+I have some suggestions to improve this app.:
+
+Name:</value>
+  </data>
+  <data name="BaseFeedBackSEND" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="BaseFeedbackSubject" xml:space="preserve">
+    <value>A Message re: 'CPR Simulation / Training'</value>
+  </data>
+  <data name="BaseFeedBackTitle" xml:space="preserve">
+    <value>Your Feedback</value>
+  </data>
+  <data name="BaseFeedbackYourFeedback" xml:space="preserve">
+    <value>Your Feedback</value>
+  </data>
+  <data name="BaseLegal" xml:space="preserve">
+    <value>Legal Disclaimer</value>
+  </data>
+  <data name="BasePrivacyBody1" xml:space="preserve">
+    <value>We collect NO personal information. 
+We collect NO payment information. 
+We collect NO Social Media Login Data. 
+We collect NO automatic data, such as IP addresses or device characteristics. 
+We collect NO private, personal information from other sources.</value>
+  </data>
+  <data name="BasePrivacyBody10" xml:space="preserve">
+    <value>As a resident of California, you are covered by California Civil Code Section 1798.83, known as the "Shine The Light" law. Your Rights include the request, free, once a year, of specific Information about personal Information if any collected. 
+Please contact us via email at service@CNGInternetSoftware.com regarding CA 1798.83</value>
+  </data>
+  <data name="BasePrivacyBody11" xml:space="preserve">
+    <value>Yes, whenever it is necessary to stay legal. An updated "Revised" date will indicate the updated version.</value>
+  </data>
+  <data name="BasePrivacyBody12" xml:space="preserve">
+    <value>Any questions, any comments, please email us at Service@CNGInternetSoftware.com.</value>
+  </data>
+  <data name="BasePrivacyBody2" xml:space="preserve">
+    <value>We are not processing any personal, private information at all</value>
+  </data>
+  <data name="BasePrivacyBody3" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="BasePrivacyBody4" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="BasePrivacyBody5" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="BasePrivacyBody6" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="BasePrivacyBody7" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="BasePrivacyBody8" xml:space="preserve">
+    <value>Although we do not collect any information, you may contact us at service@CNGInternetSoftware.com regarding any discussion regarding privacy and personal data.</value>
+  </data>
+  <data name="BasePrivacyBody9" xml:space="preserve">
+    <value>Do-Not-Track (DNT) technology for mobile applications is not yet uniformly implemented. We currently do not recognize, collect, and process and respond to DNT.</value>
+  </data>
+  <data name="BasePrivacyHead1" xml:space="preserve">
+    <value>1. WHAT INFORMATION DO WE COLLECT?</value>
+  </data>
+  <data name="BasePrivacyHead10" xml:space="preserve">
+    <value>10. CALIFORNIA RESIDENTS PRIVACY RIGHTS?</value>
+  </data>
+  <data name="BasePrivacyHead11" xml:space="preserve">
+    <value>11. DO WE MAKE UPDATES TO THIS POLICY?</value>
+  </data>
+  <data name="BasePrivacyHead12" xml:space="preserve">
+    <value>12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</value>
+  </data>
+  <data name="BasePrivacyHead2" xml:space="preserve">
+    <value>2. HOW DO WE USE YOUR INFORMATION?</value>
+  </data>
+  <data name="BasePrivacyHead3" xml:space="preserve">
+    <value>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</value>
+  </data>
+  <data name="BasePrivacyHead4" xml:space="preserve">
+    <value>4. WHAT ABOUT COOKIES AND OTHER TRACKING TECHNOLOGIES?</value>
+  </data>
+  <data name="BasePrivacyHead5" xml:space="preserve">
+    <value>5. Does this software have/use logins from Social Media?</value>
+  </data>
+  <data name="BasePrivacyHead6" xml:space="preserve">
+    <value>6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</value>
+  </data>
+  <data name="BasePrivacyHead7" xml:space="preserve">
+    <value>7. DO WE COLLECT INFORMATION FROM MINORS?</value>
+  </data>
+  <data name="BasePrivacyHead8" xml:space="preserve">
+    <value>8. WHAT ARE YOUR PRIVACY RIGHTS?</value>
+  </data>
+  <data name="BasePrivacyHead9" xml:space="preserve">
+    <value>9. DO WE RESPOND TO DO-NOT-TRACK SIGNALS?</value>
+  </data>
+  <data name="BasePrivacyLastUpdate" xml:space="preserve">
+    <value>Last updated [January 1st, 2020]</value>
+  </data>
+  <data name="BasePrivacyMainBody" xml:space="preserve">
+    <value>Thank you downloading our mobile software. We will protect your Personal Information and your right to privacy. Any questions regarding your Personal Information, please contact us at service@CNGInternetSoftware.com
+This document will describe our privacy policy. We will explain to you what Information, if any, we collect, how it is (if received) used, and what your rights are. In case you do not agree with our Privacy Policy, please stop using this application.
+This privacy policy applies to all collected Information as well as related services.</value>
+  </data>
+  <data name="BasePrivacyTitle" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="BasePrivacyTopHead" xml:space="preserve">
+    <value>Privacy Notice</value>
+  </data>
+  <data name="BaseShare" xml:space="preserve">
+    <value>Share This App</value>
+  </data>
+  <data name="BaseShare1" xml:space="preserve">
+    <value>Share This App</value>
+  </data>
+  <data name="BaseShareFound" xml:space="preserve">
+    <value>I found this new app
+[CPR Simulation and Trainer].
+Try it for yourself.
+[ https://www.cnginternetsoftware.com/smart_phone_software ]</value>
+  </data>
+  <data name="BaseShareGetOption" xml:space="preserve">
+    <value>Get Share Options</value>
+  </data>
+  <data name="BaseShareMsg1" xml:space="preserve">
+    <value>This new app lets you simulate CPR's on a pile of towels, or one, two pillows.
+
+Yes, it keeps track of count, and tells you about correct depth.
+
+Guess what, here is one of my runs:
+On:</value>
+  </data>
+  <data name="BaseShareMsg2" xml:space="preserve">
+    <value>for a BEST RATE of</value>
+  </data>
+  <data name="BaseShareMsg3" xml:space="preserve">
+    <value>correct CPR's.
+Take a look at</value>
+  </data>
+  <data name="BaseShareNote" xml:space="preserve">
+    <value>
+If you think that this app could be of use to someone else,
+why not send a brief note and let that person know.</value>
+  </data>
+  <data name="BaseShareText" xml:space="preserve">
+    <value>This new app lets you simulate CPR's on a pile of towels, or one, two pillows.
+Yes, it keeps track of count, and tells you about correct depth
+
+Take a look at 
+[https://www.cnginternetsoftware.com/smart_phone_software ]</value>
+  </data>
+  <data name="BaseShareText1" xml:space="preserve">
+    <value>This new app lets you simulate CPR's on a pile of towels, or one, two pillows.
+Yes, it keeps track of count, and tells you about correct depth
+
+Take a look at 
+[https://www.cnginternetsoftware.com/smart_phone_software ]</value>
+  </data>
+  <data name="BaseShareTitle" xml:space="preserve">
+    <value>Share this App</value>
+  </data>
+  <data name="BaseShareTitle2" xml:space="preserve">
+    <value>Share Text</value>
+  </data>
+  <data name="BaseUserGuide" xml:space="preserve">
+    <value>User Guide - Help</value>
+  </data>
+  <data name="BaseUserGuideBattery" xml:space="preserve">
+    <value>Good Question? Our Promise:
+
+Our app will:
+1) start timer and accelerometer only once the simulation page is up
+2) stop all this the moment you leave the simulation
+3) DO NOT have a timer and accelerometer just running in the background to be 'ready.'
+
+Result?
+The CPR Simulation app uses just about 0.1% of battery power per hour of continous use.</value>
+  </data>
+  <data name="BaseUserGuideBatteryHD" xml:space="preserve">
+    <value>(3)  Question about battery life.</value>
+  </data>
+  <data name="BaseUserGuideDisplayHD" xml:space="preserve">
+    <value>Are the Displays correct?</value>
+  </data>
+  <data name="BaseUserGuideDisplays" xml:space="preserve">
+    <value>To simulate the CPR activities we use the phone embedded 3-axis accelerometer, measuring all 3 'forces' of acceleration. It gives data-reads about 3,000 times a minute. Yes, VERY sensitive.
+
+Two (of three) effects can be tested quickly. Tilt the device in every whatsoever direction a bit while the [CPR Simulator] screen is up, and a red display will tell you "No CPR - Not Flat -" (Press [Start Again] if needed). A tilted device is an incorrect device.
+
+
+We installed software filters, accounting for this sensitive device. All filters are biased against a base line. Our filters are biased against the "Correct CPR" reading/display. 
+Every time a "Correct" CPR is recorded, the next 8 CPR (out of 100 / min) recordings are marked as "Correct" if the reads fall within 25% (+-) of "Correct" CPR. This accounts for a events such as a shaky hand, a soft set of towels, a tilted (misreading) phone, etc.
+That makes the (biased) display for the very alert user a bit iffy.
+
+Valid? 
+We think so. Many 'first responders' like you and me performing CPR during an emergency that is not measured scientifically, and still, save the 'day.'</value>
+  </data>
+  <data name="BaseUserGuideDoingCPR" xml:space="preserve">
+    <value>The top frame has (3) parts:
+
+(1) Recording "Breath of Life"
+Rescue breathing is no longer required in layperson CPR emergencies. But. There are still emergency scenarios which call for rescue breathing. So, we simulate the count, and the Breathing Sets (30 CPR's each), and show the counters.
+
+(2) A message telling you what your most current CPR compress (down push) would be in a real situation ("Correct," "Too Flat," i.e., not deep enough, or "Too Deep," i.e., a dangerously (2.4" +).
+
+(3) A button to Save your CPR compression results in a DB.
+
+
+The bottom frame has (2) parts:
+
+(1) a line of two switches; (a) turning the beeper on/off; (b) turning the voice announcement for every 30 beeps on/off.
+
+(2) A [ Start Again ] button. Pressing it will silence the sounds, reset the CPR counters, reset CPR results, and start from anew.</value>
+  </data>
+  <data name="BaseUserGuideDoingCPRHD" xml:space="preserve">
+    <value>(1) App Page: [Start Simulation ]</value>
+  </data>
+  <data name="BaseUserGuidePillows1" xml:space="preserve">
+    <value>Pic. 1</value>
+  </data>
+  <data name="BaseUserGuidePillows2" xml:space="preserve">
+    <value>Pic. 2</value>
+  </data>
+  <data name="BaseUserGuidePillowsHD" xml:space="preserve">
+    <value>How to simulate CPR compressions</value>
+  </data>
+  <data name="BaseUserGuidePillowsText5" xml:space="preserve">
+    <value>So. Simulating CPR.</value>
+  </data>
+  <data name="BaseUserGuidePillowsText51" xml:space="preserve">
+    <value>Take a set of towels, pillows, something cushy to simulate a human chest. Fold your two hands, as shown in Pic. 1 on top of this 'chest'. Ready!
+Start the Simulation: 100 CPR compressions into the towels per minute, about 2.4 inches deep.</value>
+  </data>
+  <data name="BaseUserGuidePillowsText52" xml:space="preserve">
+    <value>How? The Hands - two versions</value>
+  </data>
+  <data name="BaseUserGuidePillowsText53" xml:space="preserve">
+    <value>1) 'Officially?' OK, you remember the CPR 'hands' (Pic 1).
+The CPR-hands hold the edge of the phone (Pic 2). Run the app. The app will do the leading beeps (100/min), you do the compressions, it's all recorded, like "It's a-ok," or "No, not OK".</value>
+  </data>
+  <data name="BaseUserGuidePillowsText531" xml:space="preserve">
+    <value>2) 'The-Easy-Way?' Still OK. Put just the lower CPR-hand flat on the towels, the phone on top; run the app, and do the compressions, the recordings.</value>
+  </data>
+  <data name="BaseUserGuidePillowsText54" xml:space="preserve">
+    <value>Problem?</value>
+  </data>
+  <data name="BaseUserGuidePillowsText55" xml:space="preserve">
+    <value>Yes. Today's smartphones are too smart. Every time you put your hand closely over the phone screen, the display changes. Bummer. Please follow what you see in Pic. 2; 
+EITHER -- phone still between the two hands, but let it half-way or more stick out. Use your thumb to press the required buttons or switches. 
+OR -- Use just the bottom hand, and put the phone on top. Use the other (free) hand to run the app. Not true CPR, but will meassure tempo and depth accurately.</value>
+  </data>
+  <data name="BaseUserGuidePillowsText56" xml:space="preserve">
+    <value>
+Thankyou for you efforts to deepen you understanding of CPR.</value>
+  </data>
+  <data name="BaseUserGuideResults" xml:space="preserve">
+    <value>[Best CPR Simulation]
+
+The data in this section is from the list of saved CPR sessions, and is the best result measured against "correct CPR's."
+
+
+Congratulation
+
+Press [Share Option], and you can send an email to your friend that includes the data from the [Best CPR Simulation]. A little bragging, but hey, you did great.
+
+
+The List of Results
+
+A DB based list of all previous CPR sessions. Sorted by date. Press an individual record to have an option to delete that record.</value>
+  </data>
+  <data name="BaseUserGuideResults1" xml:space="preserve">
+    <value>
+Note:
+TAP a list-record to manage / DELETE that reocrd.
+</value>
+  </data>
+  <data name="BaseUserGuideResultsHD" xml:space="preserve">
+    <value>(2) App Page [ Results ]</value>
+  </data>
+  <data name="BaseUserGuideResultsTitle" xml:space="preserve">
+    <value>User Guide - Simul. Results</value>
+  </data>
+  <data name="BaseUserGuideStart0" xml:space="preserve">
+    <value>We are trying to simulate CPR compressions, record them, and maybe share the best result.</value>
+  </data>
+  <data name="BaseUserGuideStart01" xml:space="preserve">
+    <value>A. Preparing</value>
+  </data>
+  <data name="BaseUserGuideStart02" xml:space="preserve">
+    <value>Simulating a human chest.......
+(1) Get a bunch of towels, pillows, a bunch of sweaters.
+The CPR's.......
+(2) Fold your hands resting on top of the towels / pillows / sweaters.
+See &lt;How to Simulate...&gt;, next pull-down.</value>
+  </data>
+  <data name="BaseUserGuideStart03" xml:space="preserve">
+    <value>B. Action, CPR compressions</value>
+  </data>
+  <data name="BaseUserGuideStart04" xml:space="preserve">
+    <value>(1) Have the phone in-between your hands. See &lt;How to Simulate...&gt;, next pull-down.
+(2) Start the app, using a thumb to control things
+(3) At each beep, you need to do a compression (about 2.4 inches, 100 a minute)
+(4) When it is time, press the [ Save Result ] button
+(5) Just in case you want to run another CPR session, press [ Start Again ]</value>
+  </data>
+  <data name="BaseUserGuideStart05" xml:space="preserve">
+    <value>C. Results</value>
+  </data>
+  <data name="BaseUserGuideStart06" xml:space="preserve">
+    <value>The " Results " page shows:
+ -- "Best CPR Simulation", allowing you to share your best CPR session result with a friend
+ -- a list of all your CPR session results, sorted by date</value>
+  </data>
+  <data name="BaseUserGuideStartHD" xml:space="preserve">
+    <value>General Usage</value>
+  </data>
+  <data name="BaseUserGuideTitle" xml:space="preserve">
+    <value>User Guide</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItHD" xml:space="preserve">
+    <value>What is it?</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItText000" xml:space="preserve">
+    <value>This application is</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItText001" xml:space="preserve">
+    <value>an audio and visual guide that trains you to do CPR compressions correctly. Correctly is 100 - 120 compressions per minute, about 2.4 inches deep (Adults)</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItText002" xml:space="preserve">
+    <value>HOW does the app help?</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItText003" xml:space="preserve">
+    <value>(1) The app beeps at a 100/min rate, and you should do a compress at every beep.
+(2) The app monitors your compression 'depth' and displays "Correct" for about 2.4\", "To Flat" for &lt;2.4\", "Too Deep" for &gt;2.4\"
+(3) At the end of a 'run' you can record the results.
+(4) The app allows you to text your best result to a friend.</value>
+  </data>
+  <data name="BaseUserGuideWhatIsItText004" xml:space="preserve">
+    <value>Please check [ How to simulate CPR Compressions ]</value>
+  </data>
+  <data name="BaseUserGuide_2_BatteryHD1" xml:space="preserve">
+    <value>Question about battery life.</value>
+  </data>
+  <data name="BaseUserGuide_2_DoingCPRHD1" xml:space="preserve">
+    <value>General Use - CPR Compressions</value>
+  </data>
+  <data name="BaseUserGuide_2_DoingCPRTitle" xml:space="preserve">
+    <value>Guide - CPR Simul. / Training</value>
+  </data>
+  <data name="BaseUserGuide_P1Titel" xml:space="preserve">
+    <value>User Guide - Start Page</value>
+  </data>
+  <data name="CPR100Count" xml:space="preserve">
+    <value>100 Compressions / minute (Adults)</value>
+  </data>
+  <data name="CPRBeeperHdr" xml:space="preserve">
+    <value>Beeper
+Active:</value>
+  </data>
+  <data name="CPRResultAt" xml:space="preserve">
+    <value>At:</value>
+  </data>
+  <data name="CPRResultBest" xml:space="preserve">
+    <value>Best CPR Simulation</value>
+  </data>
+  <data name="CPRResultCongratulation" xml:space="preserve">
+    <value>Congratulation</value>
+  </data>
+  <data name="CPRResultCorrect" xml:space="preserve">
+    <value>Correct CPR's</value>
+  </data>
+  <data name="CPRResultData1" xml:space="preserve">
+    <value>CPR Profile with:
+
+Date / Time:</value>
+  </data>
+  <data name="CPRResultDeepData" xml:space="preserve">
+    <value>
+Compressions to Deep.........:</value>
+  </data>
+  <data name="CPRResultDeleteCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CPRResultDeleteData" xml:space="preserve">
+    <value>Deleting CPR Simulation Record</value>
+  </data>
+  <data name="CPRResultGoodData" xml:space="preserve">
+    <value>
+Good Compressions.............:</value>
+  </data>
+  <data name="CPRResultNoData" xml:space="preserve">
+    <value>No Data Yet</value>
+  </data>
+  <data name="CPRResultOn" xml:space="preserve">
+    <value>On:</value>
+  </data>
+  <data name="CPRResultSave" xml:space="preserve">
+    <value> Save
+
+
+
+
+CPR's</value>
+  </data>
+  <data name="CPRResultShallowData" xml:space="preserve">
+    <value>
+Compressions too Shallow..:</value>
+  </data>
+  <data name="CPRResultShareOption" xml:space="preserve">
+    <value>Share Options</value>
+  </data>
+  <data name="CPRResultTitle" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="CPRResultWhyNot" xml:space="preserve">
+    <value>Why not share this good news with a friend?</value>
+  </data>
+  <data name="CPRResultYesDelete" xml:space="preserve">
+    <value>Yes, Delete</value>
+  </data>
+  <data name="CPRResultYouHad" xml:space="preserve">
+    <value>You had:</value>
+  </data>
+  <data name="CPRSimulActivated" xml:space="preserve">
+    <value>Activated\n-At Rest-</value>
+  </data>
+  <data name="CPRSimulAdvice" xml:space="preserve">
+    <value>Activity Panel</value>
+  </data>
+  <data name="CPRSimulAdvice1" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="CPRSimulBreath" xml:space="preserve">
+    <value># of Rescue Breath (1 per 30 CPR's)</value>
+  </data>
+  <data name="CPRSimulCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CPRSimulCorrect" xml:space="preserve">
+    <value>Correct CPR</value>
+  </data>
+  <data name="CPRSimulGotit" xml:space="preserve">
+    <value>Got It</value>
+  </data>
+  <data name="CPRSimulHdr" xml:space="preserve">
+    <value>    Start CPR
+Simulation?</value>
+  </data>
+  <data name="CPRSimulLayFlat" xml:space="preserve">
+    <value>-No CPR-\nNOT Flat</value>
+  </data>
+  <data name="CPRSimulNoAction" xml:space="preserve">
+    <value>No Actions</value>
+  </data>
+  <data name="CPRSimulNoCPR" xml:space="preserve">
+    <value>- No CPR -</value>
+  </data>
+  <data name="CPRSimulPopupmsg" xml:space="preserve">
+    <value>Your device seems to process accelerometer output too slow.
+
+Application will continue, but results could be negatively impacted.
+</value>
+  </data>
+  <data name="CPRSimulPotential" xml:space="preserve">
+    <value>Potential CPR's</value>
+  </data>
+  <data name="CPRSimulPrep" xml:space="preserve">
+    <value>Preparation</value>
+  </data>
+  <data name="CPRSimulReady" xml:space="preserve">
+    <value>- Ready -</value>
+  </data>
+  <data name="CPRSimulReset" xml:space="preserve">
+    <value>Reset All</value>
+  </data>
+  <data name="CPRSimulResultdata11" xml:space="preserve">
+    <value>Good Compressions .. .. .. .. .:</value>
+  </data>
+  <data name="CPRSimulResultdata22" xml:space="preserve">
+    <value>Compressions too Shallow...:</value>
+  </data>
+  <data name="CPRSimulResultdata33" xml:space="preserve">
+    <value>Compressions too Deep .. .. :</value>
+  </data>
+  <data name="CPRSimulResultMsg1" xml:space="preserve">
+    <value>CPR Simulated Training Result</value>
+  </data>
+  <data name="CPRSimulResultMsg2" xml:space="preserve">
+    <value>
+No CPR Simulation Result available.
+______________________________________
+
+Please run a set of simulated CPR's
+
+            + "    and try again.\n</value>
+  </data>
+  <data name="CPRSimulResultstm" xml:space="preserve">
+    <value>
+ Adding CPR Simulation Results:
+ __________________________________
+
+</value>
+  </data>
+  <data name="CPRSimulResultYes" xml:space="preserve">
+    <value>Yes, Save</value>
+  </data>
+  <data name="CPRSimulSaveResult" xml:space="preserve">
+    <value>SAVE RESULT</value>
+  </data>
+  <data name="CPRSimulStartAgain" xml:space="preserve">
+    <value>START AGAIN</value>
+  </data>
+  <data name="CPRSimulTitle" xml:space="preserve">
+    <value>CPR Simulator</value>
+  </data>
+  <data name="CPRSimulTooDeep" xml:space="preserve">
+    <value>Too Deep</value>
+  </data>
+  <data name="CPRSimulTooFlat" xml:space="preserve">
+    <value>Too Shallow</value>
+  </data>
+  <data name="CPRSoundHdr" xml:space="preserve">
+    <value>       Voice
+message:</value>
+  </data>
+  <data name="CPRTestResultshdr" xml:space="preserve">
+    <value>Test:</value>
+  </data>
+  <data name="EntryMainDoSimul" xml:space="preserve">
+    <value>Start Simulation</value>
+  </data>
+  <data name="EntryMainHDR01" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="EntryMainHDR02" xml:space="preserve">
+    <value>CPR Simulation
+&amp; Training</value>
+  </data>
+  <data name="EntryMainHDR03" xml:space="preserve">
+    <value>Real Time - Real Count - Real Depth</value>
+  </data>
+  <data name="EntryMainResults" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="EntryMainTitle" xml:space="preserve">
+    <value>CPR - Realtime Simulation</value>
+  </data>
+  <data name="ResultHDR" xml:space="preserve">
+    <value>Simulation Results        OK      Too       Too
+     Date Time               CPR's     Flat     Deep</value>
+  </data>
+  <data name="SuperExitMsg" xml:space="preserve">
+    <value>\nAre you sure you want to exit?</value>
+  </data>
+  <data name="SuperExitNotNow" xml:space="preserve">
+    <value>Not Now</value>
+  </data>
+  <data name="SuperExitTitle" xml:space="preserve">
+    <value>Exit from \"CPR Simulator\"</value>
+  </data>
+  <data name="SuperExitYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

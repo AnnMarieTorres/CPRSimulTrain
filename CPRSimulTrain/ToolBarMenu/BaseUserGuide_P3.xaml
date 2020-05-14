@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseUserGuide_P3"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <ContentPage.Resources>
+    <Color x:Key="ExpandedColor">Yellow</Color>
+    <Color x:Key="CollapsedColor">LightGray</Color>
+  </ContentPage.Resources>
+
+
+
+  <x1:ContentPage.Content>
+    <!--  General Scrollable stuff, (excluding fixed 'CNG Msg")  -->
+    <x1:ScrollView x:Name="GenScrollWindow" VerticalScrollBarVisibility="Always">
+      <x1:StackLayout>
+        <x1:StackLayout>
+
+
+          <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+            <Label
+              Text="{x:Static resources:AppResources.BaseUserGuideResults1}"
+              TextColor="DarkRed"
+              VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium" />
+          </Grid>
+          <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+            <Label
+              Text="{x:Static resources:AppResources.BaseUserGuideResults}"
+              TextColor="#303030"
+              VerticalTextAlignment="Center" />
+          </Grid>
+
+
+        </x1:StackLayout>
+        <magic:GradientView VerticalOptions="FillAndExpand">
+          <magic:GradientView.GradientSource>
+            <magic:GradientCollection>
+              <magic:LinearGradient Angle="90">
+                <magic:GradientStop Offset="0" Color="White" />
+                <magic:GradientStop Offset="0.5" Color="LightBlue" />
+                <magic:GradientStop Offset="1" Color="WhiteSmoke" />
+              </magic:LinearGradient>
+            </magic:GradientCollection>
+          </magic:GradientView.GradientSource>
+        </magic:GradientView>
+
+
+      </x1:StackLayout>
+
+
+    </x1:ScrollView>
+  </x1:ContentPage.Content>
+</x1:ContentPage>

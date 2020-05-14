@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseUserGuide_P2"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <ContentPage.Resources>
+    <Color x:Key="ExpandedColor">Yellow</Color>
+    <Color x:Key="CollapsedColor">LightGray</Color>
+  </ContentPage.Resources>
+
+
+
+  <x1:ContentPage.Content>
+    <!--  General Scrollable stuff, (excluding fixed 'CNG Msg")  -->
+    <x1:ScrollView x:Name="GenScrollWindow" VerticalScrollBarVisibility="Always">
+      <x1:StackLayout>
+        <x1:StackLayout>
+
+          <!--  General Use  -->
+          <syncfusion:SfExpander DynamicSizeMode="Content">
+            <syncfusion:SfExpander.Header>
+              <Grid Padding="5,5,5,5">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuide_2_DoingCPRHD1}"
+                  TextColor="#495F6E"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Header>
+            <syncfusion:SfExpander.Content>
+              <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuideDoingCPR}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Content>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroupList>
+                <VisualStateGroup>
+                  <VisualState Name="Expanded">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource ExpandedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                  <VisualState Name="Collapsed">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource CollapsedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+          </syncfusion:SfExpander>
+
+
+          <!--  How to simulate / towels  -->
+          <syncfusion:SfExpander DynamicSizeMode="Content">
+            <syncfusion:SfExpander.Header>
+              <Grid Padding="5,5,5,5">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsHD}"
+                  TextColor="#495F6E"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Header>
+            <syncfusion:SfExpander.Content>
+
+              <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+
+
+                <Grid.RowDefinitions>
+                  <x1:RowDefinition Height="1" />
+                  <x1:RowDefinition Height="110" />
+                  <x1:RowDefinition Height="5" />
+                  <x1:RowDefinition Height="20" />
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                  <x1:RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <x1:Grid.ColumnDefinitions>
+                  <x1:ColumnDefinition Width="*" />
+                </x1:Grid.ColumnDefinitions>
+
+                <!--  Pictures  -->
+                <StackLayout
+                  Grid.Row="1"
+                  Grid.Column="0"
+                  Orientation="Horizontal">
+
+                  <StackLayout>
+                    <x1:Image
+                      Margin="0,0,0,0"
+                      HorizontalOptions="Center"
+                      Source="hand002s2.jpg"
+                      VerticalOptions="Center" />
+                  </StackLayout>
+
+                  <StackLayout>
+                    <x1:Image
+                      Margin="0,0,0,0"
+                      HorizontalOptions="Center"
+                      Source="hand004s2.jpg"
+                      VerticalOptions="Center" />
+                  </StackLayout>
+                </StackLayout>
+
+                <!--  Picture labels  -->
+                <StackLayout
+                  Grid.Row="3"
+                  Grid.Column="0"
+                  Orientation="Horizontal">
+
+                  <StackLayout>
+                    <Label
+                      Margin="0,-15,0,0"
+                      Text="{x:Static resources:AppResources.BaseUserGuidePillows1}"
+                      TextColor="#303030"
+                      VerticalTextAlignment="Center" />
+                  </StackLayout>
+
+                  <StackLayout>
+                    <Label
+                      Margin="45,-15,0,0"
+                      Text="{x:Static resources:AppResources.BaseUserGuidePillows2}"
+                      TextColor="#303030"
+                      VerticalTextAlignment="Center" />
+                  </StackLayout>
+
+                </StackLayout>
+
+                <!--  Text  -->
+                <Label
+                  Grid.Row="5"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText5}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="End" />
+
+                <Label
+                  Grid.Row="6"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText51}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Start" />
+
+                <Label
+                  Grid.Row="7"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText52}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="End" />
+
+                <Label
+                  Grid.Row="8"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText53}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Start" />
+
+                <Label
+                  Grid.Row="9"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontAttributes="Bold"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText54}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="End" />
+
+                <Label
+                  Grid.Row="10"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText55}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Start" />
+
+                <Label
+                  Grid.Row="11"
+                  Grid.Column="0"
+                  Margin="3,0,3,0"
+                  FontSize="Micro"
+                  Text="{x:Static resources:AppResources.BaseUserGuidePillowsText56}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Center" />
+
+              </Grid>
+
+            </syncfusion:SfExpander.Content>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroupList>
+                <VisualStateGroup>
+                  <VisualState Name="Expanded">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource ExpandedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                  <VisualState Name="Collapsed">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource CollapsedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+          </syncfusion:SfExpander>
+
+
+          <!--  Are the displays right?  -->
+          <syncfusion:SfExpander DynamicSizeMode="Content">
+            <syncfusion:SfExpander.Header>
+              <Grid Padding="5,5,5,5">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuideDisplayHD}"
+                  TextColor="#495F6E"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Header>
+            <syncfusion:SfExpander.Content>
+              <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuideDisplays}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Content>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroupList>
+                <VisualStateGroup>
+                  <VisualState Name="Expanded">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource ExpandedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                  <VisualState Name="Collapsed">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource CollapsedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+          </syncfusion:SfExpander>
+
+          <!--  Question About Battery Life  -->
+          <syncfusion:SfExpander DynamicSizeMode="Content">
+            <syncfusion:SfExpander.Header>
+              <Grid Padding="5,5,5,5">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuide_2_BatteryHD1}"
+                  TextColor="#495F6E"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Header>
+            <syncfusion:SfExpander.Content>
+              <Grid Padding="15,15,15,15" BackgroundColor="#FFFFFF">
+                <Label
+                  Text="{x:Static resources:AppResources.BaseUserGuideBattery}"
+                  TextColor="#303030"
+                  VerticalTextAlignment="Center" />
+              </Grid>
+            </syncfusion:SfExpander.Content>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroupList>
+                <VisualStateGroup>
+                  <VisualState Name="Expanded">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource ExpandedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                  <VisualState Name="Collapsed">
+                    <VisualState.Setters>
+                      <Setter Property="HeaderBackgroundColor" Value="{x:StaticResource CollapsedColor}" />
+                    </VisualState.Setters>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+          </syncfusion:SfExpander>
+
+
+        </x1:StackLayout>
+        <magic:GradientView VerticalOptions="FillAndExpand">
+          <magic:GradientView.GradientSource>
+            <magic:GradientCollection>
+              <magic:LinearGradient Angle="90">
+                <magic:GradientStop Offset="0" Color="White" />
+                <magic:GradientStop Offset="0.5" Color="LightBlue" />
+                <magic:GradientStop Offset="1" Color="WhiteSmoke" />
+              </magic:LinearGradient>
+            </magic:GradientCollection>
+          </magic:GradientView.GradientSource>
+        </magic:GradientView>
+
+
+      </x1:StackLayout>
+
+
+    </x1:ScrollView>
+  </x1:ContentPage.Content>
+</x1:ContentPage>

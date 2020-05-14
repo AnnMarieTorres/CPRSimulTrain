@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseContactUs"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <x1:StackLayout>
+    <x1:ScrollView VerticalScrollBarVisibility="Always">
+
+      <!--  Location/Contact  -->
+      <x1:StackLayout x:Name="MainStack" BackgroundColor="WhiteSmoke">
+
+        <!--  Contact information  -->
+        <!--  Title  -->
+        <x1:Label
+          x:Name="LocationLabel"
+          Margin="10,16,0,0"
+          FontSize="Large"
+          HorizontalTextAlignment="Start"
+          Text="{x:Static resources:AppResources.BaseContactUs}" />
+        <x1:Frame
+          x:Name="LocationFrame"
+          Margin="10,0"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <!--  Location  -->
+
+          <x1:Label
+            Margin="10,5,0,5"
+            Padding="10,0,0,0"
+            BackgroundColor="LightGray"
+            FontSize="Default"
+            HorizontalOptions="FillAndExpand"
+            Text="{x:Static resources:AppResources.BaseContactLocation}" />
+
+        </x1:Frame>
+
+        <!--  Getting in Touch  -->
+        <!--  Title  -->
+        <x1:Label
+          x:Name="ContactLabel"
+          Margin="10,25,0,-10"
+          FontSize="Large"
+          HorizontalTextAlignment="Start"
+          Text="{x:Static resources:AppResources.BaseContactGetinTouch}" />
+
+        <x1:Frame
+          x:Name="ContactFrame"
+          Margin="10,10,10,0"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <x1:StackLayout
+            x:Name="ContactStack"
+            Padding="15"
+            HorizontalOptions="FillAndExpand"
+            Spacing="20">
+
+            <!--  Entry: Name  -->
+            <inputLayout:SfTextInputLayout
+              ContainerBackgroundColor="#E6EEF9"
+              ContainerType="Filled"
+              FocusedColor="#0450C2"
+              HeightRequest="40"
+              Hint="{x:Static resources:AppResources.BaseFeedbackNameOptional}"
+              InputViewPadding="2"
+              OutlineCornerRadius="8">
+              <x1:Entry
+                x:Name="sendName"
+                FontSize="Small"
+                HeightRequest="40"
+                Keyboard="Text"
+                Text="" />
+
+
+            </inputLayout:SfTextInputLayout>
+
+            <!--  Entry: Email  -->
+            <inputLayout:SfTextInputLayout
+              ContainerBackgroundColor="#E6EEF9"
+              ContainerType="Filled"
+              FocusedColor="#0450C2"
+              HeightRequest="40"
+              Hint="{x:Static resources:AppResources.BaseFeedbackEmailOptional}"
+              InputViewPadding="2"
+              OutlineCornerRadius="8">
+              <x1:Entry
+                x:Name="sendEmail"
+                FontSize="Small"
+                HeightRequest="40"
+                Keyboard="Email"
+                Text="" />
+            </inputLayout:SfTextInputLayout>
+
+            <!--  Entry: Message  -->
+            <inputLayout:SfTextInputLayout
+              ContainerBackgroundColor="#E6EEF9"
+              ContainerType="Filled"
+              FocusedColor="#0450C2"
+              HeightRequest="40"
+              Hint="{x:Static resources:AppResources.BaseContactYourMessage}"
+              InputViewPadding="2"
+              OutlineCornerRadius="8">
+              <x1:Entry
+                x:Name="sendMesssage"
+                FontSize="Small"
+                HeightRequest="40"
+                Keyboard="Text"
+                Text="" />
+            </inputLayout:SfTextInputLayout>
+
+            <!--  Send Button  -->
+            <x1:Button
+              x:Name="SfButton_SendAsync"
+              Padding="5"
+              BackgroundColor="DeepSkyBlue"
+              Clicked="SfButton_Send_ClickedAsync"
+              CornerRadius="8"
+              FontSize="Small"
+              HeightRequest="33"
+              Text="{x:Static resources:AppResources.BaseContactSend}"
+              TextColor="White"
+              WidthRequest="100" />
+          </x1:StackLayout>
+
+        </x1:Frame>
+      </x1:StackLayout>
+    </x1:ScrollView>
+
+
+  </x1:StackLayout>
+
+
+</x1:ContentPage>

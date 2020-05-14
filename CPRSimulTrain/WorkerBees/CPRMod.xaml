@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.CPRMod"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+  xmlns:local="clr-namespace:CPRSimulTrain.CPR_Utilities"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:sfSwitch="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <!--  Toolbar  -->
+  <x1:ContentPage.ToolbarItems>
+    <x1:ToolbarItem
+      Name="MenuItem0"
+      Clicked="BaseUserGuide_P2_Clicked"
+      Icon="help.png"
+      Order="Primary"
+      Priority="0" />
+    <x1:ToolbarItem
+      Name="MenuItem1"
+      Clicked="BaseUserGuide_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseUserGuide}" />
+    <x1:ToolbarItem
+      Name="MenuItem4"
+      Clicked="BaseFeedback_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseFeedback}" />
+    <x1:ToolbarItem
+      Name="MenuItem5"
+      Clicked="BaseShare_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseShare}" />
+    <x1:ToolbarItem
+      Name="MenuItem6"
+      Clicked="BaseDisclaimer_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseLegal}" />
+    <x1:ToolbarItem
+      Name="MenuItem7"
+      Clicked="BasePrivacy_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.Base_Private}" />
+    <x1:ToolbarItem
+      Name="MenuItem8"
+      Clicked="StatAbout_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseAbout}" />
+    <x1:ToolbarItem
+      Name="MenuItem9"
+      Clicked="BaseContactUs_Clicked"
+      Order="Secondary"
+      Priority="1"
+      Text="{x:Static resources:AppResources.BaseContactUs}" />
+  </x1:ContentPage.ToolbarItems>
+
+  <x1:StackLayout>
+    <x1:ScrollView x:Name="GenScrollWindow" VerticalScrollBarVisibility="Always">
+
+      <!--  Overall Frame  -->
+      <x1:Frame
+        x:Name="OverallFrame"
+        BackgroundColor="WhiteSmoke"
+        BorderColor="Brown"
+        HorizontalOptions="FillAndExpand">
+
+        <!--  Sections via 'Borders'  -->
+        <x1:StackLayout
+          Margin="-10,0,-10,0"
+          BackgroundColor="WhiteSmoke"
+          HorizontalOptions="FillAndExpand">
+
+          <!--  Exercise Notices  -->
+          <x1:StackLayout>
+            <!--  Compression Exercise Display  -->
+            <border:SfBorder
+              Margin="0,0,0,0"
+              Padding="3,2,3,2"
+              BackgroundColor="Red"
+              BorderColor="Green"
+              CornerRadius="5"
+              MinimumWidthRequest="-1">
+
+              <!--  Input / Result Details  -->
+              <x1:StackLayout>
+
+                <!--  Input  -->
+                <x1:Grid x:Name="gridTwo" BackgroundColor="LightYellow">
+                  <x1:Grid.RowDefinitions>
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="25" />
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="40" />
+                    <x1:RowDefinition Height="2" />
+                    <x1:RowDefinition Height="110" />
+                    <x1:RowDefinition Height="2" />
+                    <x1:RowDefinition Height="50" />
+                    <x1:RowDefinition Height="2" />
+                  </x1:Grid.RowDefinitions>
+
+                  <x1:Grid.ColumnDefinitions>
+                    <x1:ColumnDefinition Width="*" />
+                  </x1:Grid.ColumnDefinitions>
+
+
+                  <!--  Panel advertisement  -->
+                  <x1:StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal">
+
+                    <x1:Label
+                      Padding="5,0,0,0"
+                      FontSize="Micro"
+                      HorizontalTextAlignment="Center"
+                      Text="{x:Static resources:AppResources.CPRSimulAdvice}"
+                      TextColor="Black" />
+
+                  </x1:StackLayout>
+
+                  <!--  Set <> Compression Count String  -->
+                  <x1:StackLayout
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    HorizontalOptions="CenterAndExpand"
+                    IsVisible="True"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
+
+
+                    <x1:StackLayout
+                      Margin="0,0,20,0"
+                      HorizontalOptions="End"
+                      IsVisible="True"
+                      Orientation="Horizontal"
+                      VerticalOptions="Center">
+                      <x1:Label
+                        BackgroundColor="LightYellow"
+                        FontSize="Micro"
+                        HorizontalTextAlignment="End"
+                        Text="{x:Static resources:AppResources.CPRSimulPotential}"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center"
+                        WidthRequest="90" />
+
+                      <x1:Label
+                        x:Name="lbl_CPRCnt"
+                        BackgroundColor="LightYellow"
+                        FontSize="24"
+                        HorizontalTextAlignment="Start"
+                        Text=""
+                        TextColor="Red"
+                        WidthRequest="60" />
+                    </x1:StackLayout>
+
+                    <x1:StackLayout
+                      Margin="20,0,0,0"
+                      HorizontalOptions="Start"
+                      IsVisible="True"
+                      Orientation="Horizontal"
+                      VerticalOptions="Center">
+                      <x1:Label
+                        BackgroundColor="LightYellow"
+                        FontSize="Micro"
+                        HorizontalTextAlignment="End"
+                        Text="{x:Static resources:AppResources.CPRSimulBreath}"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center"
+                        WidthRequest="130" />
+
+                      <x1:Label
+                        x:Name="lbl_SetCnt"
+                        BackgroundColor="LightYellow"
+                        FontSize="24"
+                        HorizontalTextAlignment="Start"
+                        Text=""
+                        TextColor="Red"
+                        WidthRequest="60" />
+                    </x1:StackLayout>
+
+
+                  </x1:StackLayout>
+
+                  <!--  Actual Result, BIG RED, once per compress  -->
+                  <x1:Label
+                    x:Name="lbl_goodCompress"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Margin="0,0,0,0"
+                    BackgroundColor="LightYellow"
+                    FontAttributes="Bold"
+                    FontSize="32"
+                    HeightRequest="90"
+                    HorizontalTextAlignment="Center"
+                    Text="{x:Static resources:AppResources.CPRSimulNoAction}"
+                    TextColor="DarkRed"
+                    VerticalTextAlignment="Center" />
+
+
+                  <!--  Save Result  -->
+                  <buttons:SfButton
+                    x:Name="btResults"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Margin="15,0,15,0"
+                    BackgroundColor="LightGray"
+                    BorderColor="DarkRed"
+                    BorderWidth="2"
+                    Clicked="btResults_Clicked"
+                    CornerRadius="15"
+                    HorizontalOptions="CenterAndExpand"
+                    ImageSource="docitsmall.jpg"
+                    Text="{x:Static resources:AppResources.CPRSimulSaveResult}"
+                    TextColor="Black">
+
+
+                    <buttons:SfButton.BackgroundGradient>
+                      <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                          <gradient:SfGradientStop Offset="0" Color="#51f1f2" />
+                          <gradient:SfGradientStop Offset="1" Color="#2f9bdf" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                      </gradient:SfLinearGradientBrush>
+                    </buttons:SfButton.BackgroundGradient>
+                  </buttons:SfButton>
+
+                </x1:Grid>
+
+              </x1:StackLayout>
+            </border:SfBorder>
+
+          </x1:StackLayout>
+
+
+          <!--  2nd Header "Preparation"  -->
+          <x1:StackLayout Margin="0,0,0,-5" Orientation="Horizontal">
+
+            <x1:Label
+              FontAttributes="Italic,Bold"
+              FontSize="Medium"
+              HorizontalTextAlignment="Start"
+              Text="{x:Static resources:AppResources.CPRSimulPrep}"
+              TextColor="LightBlue"
+              VerticalTextAlignment="End" />
+
+            <x1:Label
+              Margin="10,0,0,3"
+              FontSize="Micro"
+              HorizontalTextAlignment="Start"
+              Text="{x:Static resources:AppResources.CPR100Count}"
+              TextColor="Black"
+              VerticalTextAlignment="End" />
+          </x1:StackLayout>
+
+
+          <!--  CPR Simulator / Sound / Phone-as-monitor / Simulation stats  -->
+          <border:SfBorder
+            Margin="0,0,0,0"
+            Padding="4,0,4,0"
+            BackgroundColor="WhiteSmoke"
+            BorderColor="Green"
+            CornerRadius="5">
+
+            <!--  Input / Result Details  -->
+            <x1:StackLayout>
+              <!--  Panel advertisement  -->
+              <x1:StackLayout
+                Grid.Row="1"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+
+                <x1:Label
+                  Padding="5,0,0,0"
+                  FontSize="Micro"
+                  HorizontalTextAlignment="Center"
+                  Text="{x:Static resources:AppResources.CPRSimulAdvice1}"
+                  TextColor="Black" />
+
+              </x1:StackLayout>
+
+
+              <!--  Display  -->
+              <x1:Grid x:Name="gridOne" BackgroundColor="WhiteSmoke">
+                <x1:Grid.RowDefinitions>
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="48" />
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="2" />
+                  <x1:RowDefinition Height="0" />
+                  <x1:RowDefinition Height="5" />
+                </x1:Grid.RowDefinitions>
+
+                <x1:Grid.ColumnDefinitions>
+                  <x1:ColumnDefinition Width="*" />
+                  <x1:ColumnDefinition Width="*" />
+                </x1:Grid.ColumnDefinitions>
+
+                <!--  Beep on/off  Text/Switch  -->
+                <StackLayout
+                  Grid.Row="1"
+                  Grid.Column="0"
+                  BackgroundColor="WhiteSmoke"
+                  HorizontalOptions="CenterAndExpand"
+                  Orientation="Horizontal"
+                  VerticalOptions="Center">
+
+                  <x1:Label
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Start"
+                    Text="{x:Static resources:AppResources.CPRBeeperHdr}"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+
+                  <StackLayout
+                    BackgroundColor="WhiteSmoke"
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
+
+                    <StackLayout>
+                      <sfSwitch:SfSwitch
+                        x:Name="readyBeep"
+                        IsOn="False"
+                        StateChanged="SfSwitch_beepStateChanged"
+                        VisualType="Fluent" />
+                    </StackLayout>
+
+                  </StackLayout>
+                </StackLayout>
+
+                <!--  Reset all / Name Text  -->
+                <x1:StackLayout
+                  Grid.Row="1"
+                  Grid.Column="1"
+                  HorizontalOptions="End"
+                  VerticalOptions="CenterAndExpand">
+
+                  <buttons:SfButton
+                    x:Name="btAgain"
+                    BackgroundColor="LightGray"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    Clicked="btAgain_Clicked"
+                    CornerRadius="10"
+                    FontSize="Small"
+                    HeightRequest="40"
+                    HorizontalOptions="FillAndExpand"
+                    Text="{x:Static resources:AppResources.CPRSimulStartAgain}"
+                    TextColor="Black"
+                    WidthRequest="140">
+
+                    <buttons:SfButton.BackgroundGradient>
+                      <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                          <gradient:SfGradientStop Offset="0" Color="#e9eaeb" />
+                          <gradient:SfGradientStop Offset="1" Color="#bdc3c7" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                      </gradient:SfLinearGradientBrush>
+                    </buttons:SfButton.BackgroundGradient>
+                  </buttons:SfButton>
+
+                </x1:StackLayout>
+
+
+              </x1:Grid>
+
+            </x1:StackLayout>
+          </border:SfBorder>
+
+
+          <!--  Test Mode Name Display  -->
+          <!--<x1:StackLayout>
+            <border:SfBorder
+              Margin="0,0,0,0"
+              Padding="4,2,4,2"
+              BackgroundColor="LightBlue"
+              BorderColor="Gray"
+              CornerRadius="5">
+
+              <x1:Label
+                x:Name="lbl_rawStatus"
+                Margin="0,0,0,0"
+                BackgroundColor="White"
+                FontSize="Medium"
+                HeightRequest="488"
+                HorizontalTextAlignment="Start"
+                Text=""
+                VerticalTextAlignment="Start" />
+
+            </border:SfBorder>
+          </x1:StackLayout>-->
+
+        </x1:StackLayout>
+
+      </x1:Frame>
+      <!--</x1:StackLayout>-->
+    </x1:ScrollView>
+
+  </x1:StackLayout>
+</x1:ContentPage>

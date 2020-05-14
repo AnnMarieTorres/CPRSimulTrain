@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseDisclaimer"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+
+  <x1:StackLayout>
+    <x1:ScrollView VerticalScrollBarVisibility="Always">
+
+      <!--  ==================  -->
+      <x1:StackLayout x:Name="MainStack" BackgroundColor="WhiteSmoke">
+
+        <!--  1  -->
+        <x1:Frame
+          x:Name="LocationFrame"
+          Margin="10"
+          Padding="0"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <x1:StackLayout
+            x:Name="MainFrameStack0"
+            Padding="15"
+            HorizontalOptions="FillAndExpand"
+            Spacing="9">
+
+
+            <!--  Border around 4  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  4 content  -->
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTerms}" />
+
+            </border:SfBorder>
+
+
+
+            <!--  Border around 5  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  5 content  -->
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsA}" />
+
+            </border:SfBorder>
+
+
+
+            <!--  Border around 6  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  6 content  -->
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsB}" />
+
+            </border:SfBorder>
+
+
+
+            <!--  Border around C1  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsC1}" />
+
+            </border:SfBorder>
+
+
+            <!--  Border around C2  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsC2}" />
+            </border:SfBorder>
+
+            <!--  Border around C3  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsC3}" />
+            </border:SfBorder>
+
+            <!--  Border around C4  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsC4}" />
+
+            </border:SfBorder>
+
+
+
+            <!--  Border around 8  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  8 content  -->
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsD}" />
+
+            </border:SfBorder>
+
+            <!--  Border around 9  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  9 content  -->
+
+              <x1:Label
+                Margin="0,5,0,5"
+                BackgroundColor="WhiteSmoke"
+                FontSize="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Text="{x:Static resources:AppResources.BaseDisclaimerTermsE}" />
+
+            </border:SfBorder>
+
+
+
+          </x1:StackLayout>
+        </x1:Frame>
+
+      </x1:StackLayout>
+    </x1:ScrollView>
+
+
+
+  </x1:StackLayout>
+
+
+</x1:ContentPage>

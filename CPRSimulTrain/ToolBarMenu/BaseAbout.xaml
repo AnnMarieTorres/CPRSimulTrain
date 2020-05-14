@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<x1:ContentPage
+  x:Class="CPRSimulTrain.BaseAbout"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:x1="http://xamarin.com/schemas/2014/forms"
+  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+  xmlns:resources="clr-namespace:CPRSimulTrain.Resx"
+  xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+  mc:Ignorable="d">
+
+  <x1:ContentPage.Padding>
+    <x1:OnPlatform x:TypeArguments="Thickness">
+      <x1:On Platform="iOS" Value="0, 20, 0, 0" />
+      <x1:On Platform="Android" Value="0, 0, 0, 0" />
+      <x1:On Platform="UWP" Value="0, 0, 0, 0" />
+    </x1:OnPlatform>
+  </x1:ContentPage.Padding>
+
+  <x1:StackLayout>
+    <x1:ScrollView VerticalScrollBarVisibility="Always">
+
+      <!--  ==================  -->
+      <x1:StackLayout x:Name="MainStack" BackgroundColor="WhiteSmoke">
+
+        <!--  1  -->
+        <x1:Frame
+          x:Name="LocationFrame"
+          Margin="10,10,10,10"
+          BackgroundColor="WhiteSmoke"
+          BorderColor="Gray"
+          HorizontalOptions="FillAndExpand">
+
+          <x1:StackLayout
+            x:Name="MainFrameStack0"
+            Padding="15"
+            HorizontalOptions="FillAndExpand">
+
+            <!--  Border around 1  -->
+            <border:SfBorder
+              Padding="8,0,8,0"
+              BorderColor="Green"
+              CornerRadius="3"
+              HorizontalOptions="FillAndExpand">
+
+              <!--  1 content  -->
+              <x1:StackLayout>
+
+                <!--  Input  -->
+                <x1:Grid x:Name="gridTwo" BackgroundColor="LightGray">
+                  <x1:Grid.RowDefinitions>
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="17" />
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="17" />
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="17" />
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="17" />
+                    <x1:RowDefinition Height="1" />
+                    <x1:RowDefinition Height="50" />
+                    <x1:RowDefinition Height="2" />
+                  </x1:Grid.RowDefinitions>
+
+
+                  <x1:Grid.ColumnDefinitions>
+                    <x1:ColumnDefinition Width="100" />
+                    <x1:ColumnDefinition Width="1" />
+                    <x1:ColumnDefinition Width="*" />
+                  </x1:Grid.ColumnDefinitions>
+
+
+                  <!--  About Name  -->
+                  <x1:Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="End"
+                    Text="{x:Static resources:AppResources.BaseAboutName}"
+                    VerticalTextAlignment="Center" />
+                  <x1:Label
+                    x:Name="abtName"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Start"
+                    Text=""
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+
+                  <!--  About Version  -->
+                  <x1:Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="End"
+                    Text="{x:Static resources:AppResources.BaseAboutVersion}"
+                    VerticalTextAlignment="Center" />
+                  <x1:Label
+                    x:Name="abtVersion"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Start"
+                    Text=""
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+
+                  <!--  About Release Date  -->
+                  <x1:Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="End"
+                    Text="{x:Static resources:AppResources.BaseAboutRelease}"
+                    VerticalTextAlignment="Center" />
+                  <x1:Label
+                    x:Name="abtRelease"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Start"
+                    Text=""
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+
+                  <!--  About Reg. Number  -->
+                  <x1:Label
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="End"
+                    Text="{x:Static resources:AppResources.BaseAboutReg}"
+                    VerticalTextAlignment="Center" />
+                  <x1:Label
+                    x:Name="abtReg"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Start"
+                    Text=""
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+
+                  <!--  About Copyright  -->
+                  <x1:Label
+                    Grid.Row="9"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="LightGray"
+                    FontSize="Micro"
+                    HorizontalTextAlignment="Center"
+                    Text="{x:Static resources:AppResources.BaseAboutCopy}"
+                    VerticalTextAlignment="Center" />
+
+
+                </x1:Grid>
+
+
+              </x1:StackLayout>
+
+
+            </border:SfBorder>
+
+          </x1:StackLayout>
+        </x1:Frame>
+
+      </x1:StackLayout>
+    </x1:ScrollView>
+
+  </x1:StackLayout>
+</x1:ContentPage>
